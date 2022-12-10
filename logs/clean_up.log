@@ -1,0 +1,7 @@
+
+
+==================== Running pre run cleanup.sh Timestamp:  Fri 9 Dec 23:48:50 IST 2022
+file under 1 GB threshold:  ./logs/spyder.log
+file under 1 GB threshold:  ./logs/gecko.log
+file under 1 GB threshold:  ./logs/clean_up.log
+completed! runtime =  0  seconds
