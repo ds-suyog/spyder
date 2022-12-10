@@ -1,9 +1,10 @@
-# Intelligent SpyderBot #   
+# Intelligent Spyder #   
 
-#### Author: Suyog K Sethia ####                      
-I have taken up this old work again to create version 2.
+#### Author: Suyog Kumar Sethia ####                      
+I have taken up this old work again to create version 2.    
+You may refer LICENSE.md for info regarding usage.    
 
-## What SpyderBot does? ##
+## What Spyder does? ##
 1. Picks job from queue, crawls webpages for stocks, parses crawled webpages, and generates 'tabular' report.   
 2. App scraps top 5 gainers, top 5 loosers, and trending stocks from Bombay Stock Exchange(BSE)    
 3. App processes database collection's keys statistics, and generates tabular report to respective clients.        
@@ -20,18 +21,24 @@ I have taken up this old work again to create version 2.
 9. Advanced features are in pipeline for version 2.  
 
 
-## To run  ##
-setup virtual environment,
+## Set-up ##
+Just calling script create_venv.sh creates python virtual environment at parent location of spyder, by using requirements.txt provided in config.
 ```
-$source venv/bin/activate
-```
-
-install dependencies,
-```
-$pip install -r requirements.txt
+$bash create_venv.sh
 ```
 
-### Note: webscrapper is for experiment purpose         ###
+## Trigger or schedule workflow  ##
+Automation: Workflow is triggered by calling auto_webscrap.sh or it can be scheduled via crontab or other means. Script will automatically activate venv, run workflow, and then deactivate venv.
+```
+$bash auto_webscrap.sh
+```
+
+Manual Trigger: Create venv from requirements.txt provided in config, and call script trigger_webscrap.sh.  
+```
+$bash trigger_webscrap.sh
+```
+
+Workflow modes: There are multiple workflow modes, which can be set in trigger_webscrap.sh.
 
 
 
