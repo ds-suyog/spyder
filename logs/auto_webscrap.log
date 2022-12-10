@@ -8,3 +8,13 @@ shell script completed! runtime =  0  seconds
 checking default python version =  .
 activated venv3.10! python version =  Python 3.10.8 .
 shell script completed! runtime =  1  seconds
+
+==================== Triggering data acquition workflow Timestamp:  Sun 11 Dec 02:23:34 IST 2022
+checking default python version =  Python 3.10.8 .
+activated venv3.10! python version =  Python 3.10.8 .
+shell script completed! runtime =  46  seconds
+
+==================== Triggering data acquition workflow Timestamp:  Sun 11 Dec 02:26:21 IST 2022
+checking default python version =  Python 3.10.8 .
+activated venv3.10! python version =  Python 3.10.8 .
+shell script completed! runtime =  1  seconds

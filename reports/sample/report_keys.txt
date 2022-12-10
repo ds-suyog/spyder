@@ -1,0 +1,36 @@
+REPORT: database bse keys statistics
+[time stamp] December 08, 2022  00:12:50
+
+COLLECTION: trending
+total documents: 25
+key stats: 
+| fieldname   | type   |   frequency | sample                                             |
+|-------------+--------+-------------+----------------------------------------------------|
+| _id         | str    |          25 | {'_id': '656667658073846576', 'name': 'ABCAPITAL'} |
+| name        | str    |          25 | {'_id': '656667658073846576', 'name': 'ABCAPITAL'} |
+
+
+COLLECTION: gainers
+total documents: 5
+key stats: 
+| fieldname   | type     |   frequency | sample                                                                                                                         |
+|-------------+----------+-------------+--------------------------------------------------------------------------------------------------------------------------------|
+| % Ch.       | str      |           5 | {'_id': ObjectId('638fa5894490b8f361b83365'), 'Security': 'PURVA', 'LTP (₹)': '109.05', 'Change': '+12.20', '% Ch.': '+12.60'} |
+| Change      | str      |           5 | {'_id': ObjectId('638fa5894490b8f361b83365'), 'Security': 'PURVA', 'LTP (₹)': '109.05', 'Change': '+12.20', '% Ch.': '+12.60'} |
+| LTP (₹)     | str      |           5 | {'_id': ObjectId('638fa5894490b8f361b83365'), 'Security': 'PURVA', 'LTP (₹)': '109.05', 'Change': '+12.20', '% Ch.': '+12.60'} |
+| Security    | str      |           5 | {'_id': ObjectId('638fa5894490b8f361b83365'), 'Security': 'PURVA', 'LTP (₹)': '109.05', 'Change': '+12.20', '% Ch.': '+12.60'} |
+| _id         | ObjectId |           5 | {'_id': ObjectId('638fa5894490b8f361b83365'), 'Security': 'PURVA', 'LTP (₹)': '109.05', 'Change': '+12.20', '% Ch.': '+12.60'} |
+
+
+COLLECTION: loosers
+total documents: 5
+key stats: 
+| fieldname   | type     |   frequency | sample                                                                                                                              |
+|-------------+----------+-------------+-------------------------------------------------------------------------------------------------------------------------------------|
+| % Change    | str      |           5 | {'_id': ObjectId('638fa58b4490b8f361b8336b'), 'Security': 'EASEMYTRIP', 'LTP (₹)': '55.95', 'Change': '-5.30', '% Change': '-8.65'} |
+| Change      | str      |           5 | {'_id': ObjectId('638fa58b4490b8f361b8336b'), 'Security': 'EASEMYTRIP', 'LTP (₹)': '55.95', 'Change': '-5.30', '% Change': '-8.65'} |
+| LTP (₹)     | str      |           5 | {'_id': ObjectId('638fa58b4490b8f361b8336b'), 'Security': 'EASEMYTRIP', 'LTP (₹)': '55.95', 'Change': '-5.30', '% Change': '-8.65'} |
+| Security    | str      |           5 | {'_id': ObjectId('638fa58b4490b8f361b8336b'), 'Security': 'EASEMYTRIP', 'LTP (₹)': '55.95', 'Change': '-5.30', '% Change': '-8.65'} |
+| _id         | ObjectId |           5 | {'_id': ObjectId('638fa58b4490b8f361b8336b'), 'Security': 'EASEMYTRIP', 'LTP (₹)': '55.95', 'Change': '-5.30', '% Change': '-8.65'} |
+
+

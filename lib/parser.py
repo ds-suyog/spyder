@@ -8,14 +8,14 @@ This module is responsible for:
 
 __version__ = '1.1'
 
-from config import *
-import utils
+from config.config import *
+import lib.utils as utils
 import os
 import sys; sys.path.append(BASEDIR)
 from bs4 import BeautifulSoup
 import json
-from db_ops import MongoOps
-from db_ops import ElasticSearchOps
+from lib.db_ops import MongoOps
+from lib.db_ops import ElasticSearchOps
 
 MODE = None
 
@@ -49,6 +49,7 @@ class Parser:
             soup = BeautifulSoup(f, "html.parser")
         div = soup.find('div', id="gain")
         tbodys = div.findAll('tbody')
+        # import pdb; pdb.set_trace()
         trs = tbodys[0].findAll('tr')
         for td in trs[0]:
             if td != '\n':

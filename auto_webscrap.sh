@@ -19,7 +19,7 @@ echo "activated venv3.10! python version = " `python -V` "." >> $auto_webscrap_l
 # echo "openvpn ready!" >> $auto_webscrap_log
 # cd $main_dir
 
-python trigger.py
+python trigger_webscrap.py
 deactivate
 
 # #echo "checking openvpn processes: " `ps -ef | grep "open"` >> $auto_webscrap_log

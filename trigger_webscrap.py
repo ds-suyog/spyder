@@ -1,20 +1,28 @@
-from config import *
-import utils
-import sys; sys.path.append("{}/utils".format(BASEDIR))
-import reportbse
-import keys_stats as ks
-import spyder
-import parser
+from config.config import *
+from lib import utils
+# import sys; sys.path.append("{}/lib".format(BASEDIR))
+from lib import spyder
+from lib import parser
+from lib import reportbse
+from lib import keys_stats as ks
 
-def trigger_spyder():
+CRAWL = [False, True][0]
+PARSE = [False, True][0]
+GENERATE_REPORTS = [False, True][1]
+
+def trigger_workflow():
     logger = utils.getlogger()
     logger.debug("\n\n==============================================================  Triggering Spyder")
-    # import pdb; pdb.set_trace()
-    # spyder.main()
-    # reportbse.main()
-    # report_filename = ks.main(dbname)
+    if CRAWL == True:
+        spyder.main()
+    if PARSE == True:
+        parser.main()
+    if GENERATE_REPORTS == True:
+        reportbse.main()
+        ks.main()
 
-# def check_redis_queue():
+def check_job_queue():
+      pass
 #     logger = constant.getlogger()
 #     logger.debug("\n\n==============================================================  CHECKING Redis")
 #     #Implementing redis queue functionality
@@ -30,8 +38,9 @@ def trigger_spyder():
 #         kwargs = {},)
 
 def main():
-    trigger_spyder()
-    # check_redis_queue()
+    # check_job_queue() for job
+    trigger_workflow()
+
 
 if __name__ == '__main__':
     main()

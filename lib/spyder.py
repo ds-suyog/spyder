@@ -7,9 +7,8 @@ This module is responsible for:
 """
 
 __version__ = '1.1'
-
-from config import *
-import utils
+from config.config import *
+import lib.utils as utils
 import sys; sys.path.append(BASEDIR)
 from selenium import webdriver
 from selenium.webdriver.common.by import By

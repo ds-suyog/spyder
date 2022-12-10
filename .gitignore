@@ -1,3 +1,11 @@
+# env
+venv
+
+# cache
 __pycache__/
-libs/__pycache__/
-utils/__pycache__/
+config/__pycache__/
+lib/__pycache__/
+modules/__pycache__/
+
+# tmp
+geckodriver.log

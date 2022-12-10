@@ -1,5 +1,5 @@
 import logging
-import config
+from config import config
 
 def getlogger(path=config.LOGPATH_SPYDER, level=logging.DEBUG):
     # levels - debug, info, warn, error, critical

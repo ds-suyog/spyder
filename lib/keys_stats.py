@@ -1,6 +1,6 @@
 import sys; sys.path.append('./')    # call from parent location
 #sys.path.append('../')              # call from inside dir utils
-from config import *
+from config.config import *
 import sys; sys.path.append(BASEDIR)
 from pymongo import MongoClient
 from datetime import datetime

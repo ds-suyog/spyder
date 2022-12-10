@@ -1,6 +1,6 @@
 
-from config import *
-import utils
+from config.config import *
+import lib.utils as utils
 import os
 import sys; sys.path.append(BASEDIR)
 import json
@@ -20,6 +20,7 @@ class MongoOps:
 
     def insert_one(self, data, colname):
         myclient, mydb, mycol = self.getmongoclient(colname)
+        # import pdb; pdb.set_trace()
         if colname in mydb.list_collection_names(): mydb[colname].remove()
         for doc in data:
             try:
