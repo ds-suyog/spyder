@@ -28,7 +28,7 @@ $bash create_venv.sh
 ```
 
 ## Trigger or schedule workflow  ##
-Automation: Workflow is triggered by calling auto_webscrap.sh or it can be scheduled via crontab or other means. Script will automatically activate venv, run workflow, and then deactivate venv.
+Automation: Workflow is triggered by calling auto_webscrap.sh or it can be scheduled via crontab or other means. Script will automatically activate venv, run workflow, and then deactivate venv. Script can automatically trigger virtual network also and shut it down in the end too.
 ```
 $bash auto_webscrap.sh
 ```
