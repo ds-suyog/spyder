@@ -8,6 +8,10 @@ You may refer LICENSE.md for info regarding usage.
 1. Picks job from queue, crawls webpages for stocks, parses crawled webpages, and generates 'tabular' report.   
 2. App scraps top 5 gainers, top 5 loosers, and trending stocks from Bombay Stock Exchange(BSE)    
 3. App processes database collection's keys statistics, and generates tabular report.        
+4. [In pipelinea] db optimization
+5. [In pipeline] dashboarding and reporting
+6. [In pipeline] stock analytics
+7. [In pipeline] model and autoML
 
 ## Workflow: ##
 1. app creates and auto-syncs jobs  (implemented both handmade job-queue and redis job-queue) 
