@@ -1,7 +1,7 @@
 # Intelligent Spyder #   
 
 #### Author: Suyog Kumar Sethia ####                      
-I have taken up this old work again to create version 2.    
+Currently version 2 upgrades are parked.  
 You may refer LICENSE.md for info regarding usage.    
 
 ## What Spyder does? ##
